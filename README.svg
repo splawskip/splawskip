@@ -44,7 +44,7 @@
             justify-content: center;
             align-items: center;
             }
-            .items {
+            .content {
             margin-top: 7.5px;
             display: flex;
             justify-content: center;
@@ -58,6 +58,8 @@
             color: var(--color-main);
             font-weight: 800;
             font-size: 25px;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
             }
             .sub-title--small {
             font-size: 12px;
@@ -83,9 +85,11 @@
             justify-content: center;
             align-items: center;
             flex-wrap:nowrap;
-            transform-origin: 70% 70%;
-            animation: hi 3s linear -2s infinite;
+            animation: wave 2.1s 0.6s infinite;
+            transform-origin: 75% 75%;
             font-size: 32px;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
             }
             .typewriter h1 {
             font-size: 32px;
@@ -111,6 +115,8 @@
             }
             .section__heading {
             font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
             }
             .section__heading--small {
             font-size: 10px;
@@ -123,6 +129,8 @@
             flex-wrap:nowrap;
             gap: 10px;
             font-size: 16px;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
             }
             .section__desc--career li {
             display:flex;
@@ -147,6 +155,17 @@
             flex-wrap:nowrap;
             gap: 5px;
             }
+            .footer {
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            text-align: center;
+            color: var(--color-main);
+            line-height: 1.5;
+            font-size: 25px;
+            letter-spacing:0.05em;
+            }
             @keyframes border {
             0% { background-position: 0 0; }
             20% { background-position: 100% 0; }
@@ -154,17 +173,31 @@
             60% { background-position: 0 100%; }
             100% { background-position: 0 0; }
             }
-            @keyframes hi {
-            25% { transform: rotate(0deg); }
-            30% { transform: rotate(15deg); }
-            35% { transform: rotate(0deg); }
-            40% { transform: rotate(15deg); }
-            45% { transform: rotate(0deg); }
-            80% { transform: rotate(0deg); }
-            85% { transform: rotate(15deg); }
-            90% { transform: rotate(0deg); }
-            95% { transform: rotate(15deg); }
-            100% { transform: rotate(0deg); }
+            @keyframes wave {
+            0% {
+            transform: rotate(0deg);
+            }
+            10% {
+            transform: rotate(16deg);
+            }
+            20% {
+            transform: rotate(-6deg);
+            }
+            30% {
+            transform: rotate(16deg);
+            }
+            40% {
+            transform: rotate(-4deg);
+            }
+            50% {
+            transform: rotate(16deg);
+            }
+            60% {
+            transform: rotate(0deg);
+            }
+            100% {
+            transform: rotate(0deg);
+            }
             }
             @keyframes typing {
             from { width: 0 }
@@ -227,10 +260,10 @@
          </style>
          <div class='body'>
             <div class='container'>
-               <div class="typewriter">
-                  <h1 class="typewriter__text">Przemysław Spławski</h1>
+               <div class="header typewriter">
+                  <h1 class="header__heading typewriter__text">Przemysław Spławski</h1>
                </div>
-               <section class='items'>
+               <main class='content'>
                   <ul class="info">
                      <li class="sub-title">Software Engineer</li>
                      <li style="display:flex;justify-content:center;align-items:center;">
@@ -238,7 +271,6 @@
                         <span class='hi'>👋</span>
                         </a>
                      </li>
-                     <li class="sub-title sub-title--small">📖 Click to see content as readable Markdown file</li>
                   </ul>
                   <ul class="about">
                      <li class="section">
@@ -251,9 +283,9 @@
                         <h2 class="section__heading">🛠️ Technical Skills:</h2>
                         <p class="section__desc">
                         <ul class="section__list">
-                           <li class="section__list-item">Frontend: HTML, CSS (SASS/SCSS, PostCSS, Tailwind), JavaScript (jQuery, TypeScript, React, Next.JS) </li>
-                           <li class="section__list-item">Backend: PHP (WordPress, Laravel), Node.JS</li>
-                           <li class="section__list-item">Tools: Vercel, GitHub Pages, GitHub Actions, MDX, Vite, WebPack, Prettier, ESLint, Husky</li>
+                           <li class="section__list-item"><strong>Frontend</strong> - HTML, CSS (SASS/SCSS, PostCSS, Tailwind), JavaScript (jQuery, TypeScript, React, Next.JS) </li>
+                           <li class="section__list-item"><strong>Backend</strong> - PHP (WordPress, Laravel), Node.JS</li>
+                           <li class="section__list-item"><strong>Tools</strong> - Vercel, GitHub Pages, GitHub Actions, MDX, Vite, WebPack, Prettier, ESLint, Husky</li>
                         </ul>
                         </p>
                      </li>
@@ -270,7 +302,7 @@
                            <li><strong>Placester Toolbox</strong> - Handling database migrations, API interactions, and backend operations for the Placester platform.</li>
                            <li><strong>New Placester AI Powered product</strong> - Creating AI-driven content enhancements and integrating AI capabilities across the platform.</li>
                         </ul>
-                        <p>My technical expertise spans PHP, WordPress, JavaScript (including jQuery, TypeScript, React, and Next.js), Tailwind, SCSS, and Node.js. Notably, I led a team that won an in-house hackathon, creating a "Placester Admin Panel" mobile app prototype in Flutter, showcasing my ability to innovate under tight deadlines.</p>
+                        <p>My technical expertise spans PHP, WordPress, JavaScript (including jQuery, TypeScript, React, and Next.js), Tailwind, SCSS, and Node.js. Notably, I was a team member of the team that won an in-house hackathon, creating a "Placester Admin Panel" mobile app prototype in Flutter.</p>
                         <p>Though not in a formal leadership role, I have significant ownership over the Sites and Toolbox repositories, being the go-to expert for major features and decisions. My routine involves close collaboration with the Placester Product and Engineering Managers, contributing directly to our bi-weekly sprint releases, which are rigorously tested by our QA team.</p>
                         <p>Throughout my tenure, I've also contributed to the Placester Services Portal and developed the Domain Buddy browser extension, further demonstrating my versatility and commitment to enhancing the user experience and operational efficiency at Placester.</p>
                         <p>This dynamic role at Placester not only underlines my technical skills but also my ability to adapt and lead projects critical to the company’s success and customer satisfaction.</p>
@@ -288,7 +320,10 @@
                         </p>
                      </li>
                   </ul>
-               </section>
+               </main>
+               <footer class="footer">
+                  📖 Click to see content as readable Markdown file
+               </footer>
             </div>
          </div>
       </div>
