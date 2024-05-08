@@ -1,7 +1,7 @@
-<!-- Github HTML flavoured Markdown, sanitize styles, somehow I've managed to style my README by placing style tag inside SVG tag -->
+<!-- GitHub HTML flavoured Markdown, sanitize styles, somehow I've managed to style my README by placing style tag inside SVG tag -->
 
 <div style="width: 100%;">
-  <a href="https://github.com/splawskip/splawskip/blob/main/CONTENT.md">
+  <a href="https://github.com/splawskip/splawskip/blob/main/CONTENT.md" title="Click to see README as real Markdown">
     <img src="README.svg" style="width: 100%;" alt="Click to see README as real Markdown">
   </a>
 </div>

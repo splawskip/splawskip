@@ -51,11 +51,13 @@
             align-items: center;
             flex-direction: column;
             padding: 1rem;
+            gap: 7.5px;
             }
             .sub-title {
             text-transform: uppercase;
             color: var(--color-main);
             font-weight: 800;
+            font-size: 25px;
             }
             .about {
             color: var(--color-main);
@@ -63,6 +65,7 @@
             flex-direction:column;
             justify-content: flex-start;
             align-items: flex-start;
+            gap: 10px;
             }
             .hi {
             display: inline-block;
@@ -71,7 +74,7 @@
             }
             .typewriter h1 {
             font-size: 32px;
-            color: #ffffff;
+            <!-- color: white; -->
             font-weight: 800;
             text-align: center;
             overflow: hidden;
@@ -101,7 +104,7 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap:nowrap;
-            gap: 2.5px;
+            gap: 10px;
             font-size: 16px;
             }
             .section__desc--career li {
@@ -109,7 +112,7 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
-            gap: 2.5px;
+            gap: 5px;
             }
             .section__desc--career ul {
             display: flex;
@@ -125,7 +128,7 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-wrap:nowrap;
-            gap: 2.5px;
+            gap: 5px;
             }
             @keyframes border {
             0% { background-position: 0 0; }
@@ -154,6 +157,32 @@
             from, to { border-color: transparent }
             50% { border-color: var(--color-main); }
             }
+            @media (prefers-color-scheme: normal) {
+            .body {
+            --color-main: #ff9b71;
+            --color-primary: #ff4444;
+            --color-secondary: #e8e677;
+            --color-background: #0d1117;
+            --color-link: #fef29e;
+            --color-link-active: #ff4444;
+            }
+            h1 {
+            color: white;
+            }
+            }
+            @media (prefers-color-scheme: dark) {
+            .body {
+            --color-main: #ff9b71;
+            --color-primary: #ff4444;
+            --color-secondary: #e8e677;
+            --color-background: #0d1117;
+            --color-link: #fef29e;
+            --color-link-active: #ff4444;
+            }
+            h1 {
+            color: white;
+            }
+            }
             @media (prefers-color-scheme: light) {
             .body {
             --color-main: #9B5DE5;
@@ -164,7 +193,7 @@
             --color-link-active: #F15BB5;
             }
             h1 {
-            color: #000000;
+            color: black;
             }
             }
             @media (prefers-reduced-motion) {

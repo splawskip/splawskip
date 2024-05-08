@@ -18,7 +18,7 @@ I'm a full-stack developer with commercial coding experience since 2018. I have 
 
 Placester is a cutting-edge real estate platform that provides agents and brokers with powerful tools to create customized, SEO-ready websites without the need for coding. It integrates IDX listings and offers a wide range of features, from lead capture and management to advanced integrations with tools like Zapier, enhancing real estate professionals' online presence and operational efficiency.
 
-##### 👨🏻‍💻 My role at Placester:
+#### 👨🏻‍💻 My role at Placester:
 
 As a full-stack developer with Placester since 2018, I have played a pivotal role in developing and launching the core components of the Placester Codeless product. My work involves collaborating within a large, globally distributed engineering department consisting of 8 teams. I am deeply involved in several key repositories:
 
