@@ -71,10 +71,10 @@
             display: inline-block;
             transform-origin: 70% 70%;
             animation: hi 3s linear -2s infinite;
+            font-size: 32px;
             }
             .typewriter h1 {
             font-size: 32px;
-            <!-- color: white; -->
             font-weight: 800;
             text-align: center;
             overflow: hidden;
