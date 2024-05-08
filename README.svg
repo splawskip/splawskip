@@ -79,7 +79,10 @@
             gap: 10px;
             }
             .hi {
-            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap:nowrap;
             transform-origin: 70% 70%;
             animation: hi 3s linear -2s infinite;
             font-size: 32px;
@@ -230,18 +233,18 @@
                <section class='items'>
                   <ul class="info">
                      <li class="sub-title">Software Engineer</li>
-                     <li>
-                      <a href="mailto:psplawski.dev@gmail.com" role="button">
+                     <li style="display:flex;justify-content:center;align-items:center;">
+                        <a href="mailto:psplawski.dev@gmail.com" role="button" style="display:flex;justify-content:center;align-items:center;">
                         <span class='hi'>👋</span>
-                      </a>
-                    </li>
-                    <li class="sub-title sub-title--small">📖 Click to see content as readable Markdown file</li>
+                        </a>
+                     </li>
+                     <li class="sub-title sub-title--small">📖 Click to see content as readable Markdown file</li>
                   </ul>
                   <ul class="about">
                      <li class="section">
                         <h2 class="section__heading">🚀 About Me:</h2>
                         <p class="section__desc">
-                        I'm a full-stack developer since 2018 with hands-on experience in both frontend and backend development. I’ve worked through the evolution of web technologies, giving me a perspective on how best to leverage both the old and the new to build robust, efficient applications.
+                           I'm a full-stack developer since 2018 with hands-on experience in both frontend and backend development. I’ve worked through the evolution of web technologies, giving me a perspective on how best to leverage both the old and the new to build robust, efficient applications.
                         </p>
                      </li>
                      <li class="section">
